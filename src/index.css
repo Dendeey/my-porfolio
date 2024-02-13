@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.hiddenElement {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.showElement {
+  opacity: 1;
+  transform: translateX(0);
+}
