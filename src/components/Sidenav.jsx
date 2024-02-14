@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { AiOutlineHome, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
 import Logo from "../assets/images/Logo.png";
 
 const Sidenav = () => {
+  // Déclarer une variable grâce au hook "useState" de React et l'initier à "false".
+  // Puis une fonction qui permet de modifier l'état cette dernière.
   const [nav, setNav] = useState(false);
+
+  // Déclarer une fonction stockée dans une variable qui permet de passer à l'état inverse, soit "true" ou "false".
   const handleNav = () => {
     setNav(!nav);
   };
@@ -13,10 +18,10 @@ const Sidenav = () => {
   return (
     <div id="header">
       {nav ? (
-        <AiOutlineMenu
+        <IoMdClose
           size={30}
           onClick={handleNav}
-          className="absolute top-4 right-4 z-[99] md:hidden cursor-pointer text-eerieblack"
+          className="absolute top-4 right-4 z-[99] md:hidden cursor-pointer text-platinum"
         />
       ) : (
         <AiOutlineMenu
@@ -58,8 +63,8 @@ const Sidenav = () => {
           </a>
         </div>
       ) : (
-        <header className="md:block hidden fixed top-0 left-0 z-10 bg-eerieblack w-full">
-          <div className="flex justify-center items-center max-w-6xl m-auto py-4 px-6">
+        <header className="md:block hidden">
+          <div className="flex justify-center items-center py-4 px-12">
             <a href="#main" className="mr-auto">
               <img className="w-12 h-auto" src={Logo} alt="Logo" />
             </a>

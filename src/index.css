@@ -2,13 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-.hiddenElement {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1s;
+div .animate {
+  filter: blur(3px);
+  transition: 1s;
 }
 
-.showElement {
+div.show-animation .animate {
+  filter: blur(0);
+  transition: 1s;
+}
+
+#main-animate.div-animate .show-appear-animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b2021;
+  transition: 1s;
+}
+
+#main-animate.div-animate.show-animation .show-appear-animation {
+  width: 0;
+}
+
+.div-projects.div-animate .animate {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.div-projects.div-animate.show-animation .animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.div-about.div-animate .animate {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.div-about.div-animate.show-animation .animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.div-contact.div-animate .animate {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.div-contact.div-animate.show-animation .animate {
   opacity: 1;
   transform: translateX(0);
 }

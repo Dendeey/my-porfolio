@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../assets/images/Logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Main = () => {
+  useEffect(() => {
+    let elements = document.querySelectorAll(".div-animate");
+
+    window.onscroll = () => {
+      elements.forEach((element) => {
+        let posY = window.scrollY;
+        let topPos = element.offsetTop - 600;
+        let elementHeight = element.offsetHeight;
+
+        if (posY >= topPos && posY < topPos + elementHeight) {
+          element.classList.add("show-animation");
+        } else {
+          element.classList.remove("show-animation");
+        }
+      });
+    };
+  }, []);
+
   return (
     <div
       id="main"
-      className="hiddenElement flex flex-col gap-6 px-6 w-full h-screen justify-center items-center"
+      className="flex flex-col gap-6 px-6 w-full h-screen justify-center items-center"
     >
       <figure className="w-40 h-40">
         <img src={Logo} alt="Logo" />
       </figure>
-      <div className="flex flex-col gap-4">
+      <div
+        id="main-animate"
+        className="div-animate show-animation flex flex-col gap-4 relative"
+      >
+        <span className="show-appear-animation"></span>
         <h1 className="text-poppyred text-2xl font-semibold">
           Hi<span className="pl-1">!</span> I'm...
         </h1>
