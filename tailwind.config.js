@@ -9,6 +9,9 @@ export default {
         gunmetal: "#30343F",
         platinum: "#D9D9D9",
       },
+      backgroundImage: {
+        portfolioProject: "url('/src/assets/images/Otaru.jpg')",
+      },
     },
   },
   plugins: [],

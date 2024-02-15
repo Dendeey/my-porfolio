@@ -4,10 +4,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Main = () => {
+  // Appeler le hook de React "useEffect" pour déclarer un effet au composant.
   useEffect(() => {
+    // Stocker dans une variable tous les éléments qui ont une animation.
     let elements = document.querySelectorAll(".div-animate");
 
+    // Exécuter une fonction à chaque défilement de la fenêtre.
     window.onscroll = () => {
+      // Pour chaque élément, ajouter ou enlever la classe "show-animation".
       elements.forEach((element) => {
         let posY = window.scrollY;
         let topPos = element.offsetTop - 600;
