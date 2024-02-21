@@ -24,11 +24,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="div-projects div-animate show-animation flex flex-col px-6 mb-52 items-center w-full min-h-screen">
-      <h1 className="animate text-platinum text-4xl font-bold mb-8">
-        Projects
+    <div className="div-projects div-animate show-animation flex flex-col px-6 mb-40 items-center w-full min-h-screen">
+      <h1 className="animate text-platinum text-4xl font-bold mb-20">
+        Projets
       </h1>
-      <section className="div-projects div-animate show-animation flex flex-wrap gap-8">
+      <section className="div-projects div-animate show-animation flex flex-wrap justify-center items-center gap-8">
         <section className="animate projects_container flex flex-col bg-gunmetal rounded-md">
           <section className="projects_container_header h-60 bg-portfolioProject bg-cover rounded-t-md">
             <a href="#" className="flex justify-end">

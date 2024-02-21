@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div className="div-about div-animate show-animation flex justify-center h-screen">
       <h1 className="animate text-3xl text-platinum text-4xl font-bold">
-        About
+        <span className="uppercase">à</span> propos
       </h1>
     </div>
   );

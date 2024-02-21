@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="overflow-x-hidden bg-eerieblack min-h-screen w-screen">
+    <div className="overflow-x-hidden bg-eerieblack min-h-screen">
       <div className="max-w-6xl m-auto">
         <Sidenav />
         <Main />

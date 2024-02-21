@@ -39,13 +39,13 @@ const Main = () => {
         className="div-animate show-animation flex flex-col gap-4 relative"
       >
         <span className="show-appear-animation"></span>
-        <h1 className="text-poppyred text-2xl font-semibold">
-          Hi<span className="pl-1">!</span> I'm...
+        <h1 className="text-platinum text-3xl font-semibold">
+          Salut<span className="pl-1">,</span>
         </h1>
-        <h2 className="text-poppyred text-5xl font-bold">David Sim</h2>
-        <h3 className="text-platinum text-2xl">
-          <span className="font-semibold">Junior Web Developer</span> and I'm
-          looking for an apprenticeship contract.
+        <h2 className="text-poppyred text-6xl font-bold">Ici David</h2>
+        <h3 className="text-platinum text-3xl">
+          <span className="font-semibold">Développeur Web Junior</span> et
+          recheche un contrat d'apprentissage.
         </h3>
         <nav>
           <ul className="flex gap-2">
