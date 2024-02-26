@@ -24,9 +24,7 @@ const Contact = () => {
 
   return (
     <div className="div-contact div-animate show-animation flex justify-center h-screen ">
-      <h1 className="animate text-3xl text-platinum text-4xl font-bold">
-        Contact
-      </h1>
+      <h1 className="animate text-platinum text-4xl font-bold">Contact</h1>
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Main = () => {
       </figure>
       <div
         id="main-animate"
-        className="div-animate show-animation flex flex-col gap-4 relative"
+        className="div-animate show-animation flex flex-col gap-6 relative"
       >
         <span className="show-appear-animation"></span>
         <h1 className="text-platinum text-3xl font-semibold">

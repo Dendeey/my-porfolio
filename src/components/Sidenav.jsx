@@ -20,16 +20,24 @@ const Sidenav = () => {
   };
 
   // Au scroll de la page, déplacer la barre de naviguation du haut à gauche.
-  function moveNavBarToLeft() {
-    const headerElement = document.getElementById("topHeader");
-    const topHeaderPos = document.headerElement.offsetTop;
-  }
+  window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY;
+    const leftSidebar = document.getElementById("leftHeader");
+    const topHeader = document.getElementById("topHeader");
+    if (scrollPos <= 0) {
+      topHeader.classList.remove("translate-y-[-200px]");
+      leftSidebar.classList.add("translate-x-[-200px]");
+    } else {
+      topHeader.classList.add("translate-y-[-200px]");
+      leftSidebar.classList.remove("translate-x-[-200px]");
+    }
+  });
 
   return (
     <div id="header">
       <section
         id="leftHeader"
-        className="max-xl:hidden fixed h-full left-4 flex items-center"
+        className="max-xl:hidden fixed h-full left-4 flex items-center duration-200"
       >
         <nav>
           <ul>
@@ -116,8 +124,11 @@ const Sidenav = () => {
           </a>
         </div>
       ) : (
-        <header id="topHeader" className="md:block hidden">
-          <div className="flex justify-center items-center py-4 px-12">
+        <header
+          id="topHeader"
+          className="max-md:hidden flex justify-center items-center fixed top-0 right-0 left-0 duration-200"
+        >
+          <div className="flex justify-center items-center px-16 py-4 w-screen xl:w-7/12">
             <a href="#main" className="mr-auto">
               <img className="w-12 h-auto" src={Logo} alt="Logo" />
             </a>
