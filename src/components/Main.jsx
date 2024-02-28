@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/images/Logo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Main = () => {
   // Appeler le hook de React "useEffect" pour déclarer un effet au composant.
@@ -14,7 +13,7 @@ const Main = () => {
       // Pour chaque élément, ajouter ou enlever la classe "show-animation".
       elements.forEach((element) => {
         let posY = window.scrollY;
-        let topPos = element.offsetTop - 600;
+        let topPos = element.offsetTop - 500;
         let elementHeight = element.offsetHeight;
 
         if (posY >= topPos && posY < topPos + elementHeight) {

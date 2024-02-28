@@ -21,9 +21,13 @@ const Sidenav = () => {
 
   // Au scroll de la page, déplacer la barre de naviguation du haut à gauche.
   window.addEventListener("scroll", () => {
+    // On stock la position verticale de la fenêtre
     const scrollPos = window.scrollY;
     const leftSidebar = document.getElementById("leftHeader");
     const topHeader = document.getElementById("topHeader");
+    // Quand la position verticale de la fenêtre dépasse 0, on ajoute la classe pour faire apparaître la sidebar de gauche
+    // Autrement on supprime la classe
+
     if (scrollPos <= 0) {
       topHeader.classList.remove("translate-y-[-200px]");
       leftSidebar.classList.add("translate-x-[-200px]");
@@ -37,7 +41,7 @@ const Sidenav = () => {
     <div id="header">
       <section
         id="leftHeader"
-        className="max-xl:hidden fixed h-full left-4 flex items-center duration-200"
+        className="max-xl:hidden translate-x-[-200px] fixed h-full left-4 flex items-center duration-200"
       >
         <nav>
           <ul>
@@ -128,7 +132,7 @@ const Sidenav = () => {
           id="topHeader"
           className="max-md:hidden flex justify-center items-center fixed top-0 right-0 left-0 duration-200"
         >
-          <div className="flex justify-center items-center px-16 py-4 w-screen xl:w-7/12">
+          <div className="flex justify-center items-center px-16 py-4 w-screen max-w-6xl">
             <a href="#main" className="mr-auto">
               <img className="w-12 h-auto" src={Logo} alt="Logo" />
             </a>
@@ -158,7 +162,9 @@ const Sidenav = () => {
                     className="flex font-semibold text-platinum hover:text-poppyred duration-200"
                   >
                     <BsPerson size={20} />
-                    <span className="pl-2">Skills</span>
+                    <span className="pl-2">
+                      <span className="uppercase">à</span> propos
+                    </span>
                   </a>
                 </li>
                 <li>

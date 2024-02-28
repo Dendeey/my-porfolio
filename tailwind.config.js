@@ -16,6 +16,7 @@ export default {
         sass: " #CD6799",
         tailwind: "#06b6d4",
         github: "#171515",
+        linkedin: "#0A66C2",
       },
       backgroundImage: {
         portfolioProject: "url('/src/assets/images/Otaru.jpg')",
@@ -23,6 +24,7 @@ export default {
       translate: {
         sideBarHidden: "-200px",
       },
+      sreens: {},
     },
   },
   plugins: [],

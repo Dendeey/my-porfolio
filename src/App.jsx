@@ -4,17 +4,19 @@ import Main from "./components/Main";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="overflow-x-hidden bg-eerieblack min-h-screen">
-      <div className="max-w-6xl m-auto">
-        <Sidenav />
+      <Sidenav />
+      <main className="max-w-6xl m-auto">
         <Main />
         <Projects />
         <About />
         <Contact />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
