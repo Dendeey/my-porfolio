@@ -19,12 +19,19 @@ export default {
         linkedin: "#0A66C2",
       },
       backgroundImage: {
-        portfolioProject: "url('/src/assets/images/Otaru.jpg')",
+        reactProject: "url('/src/assets/images/react_website.jpg')",
+        wordpressProject: "url('/src/assets/images/wordpress_website.jpg')",
+        phpProject: "url('/src/assets/images/php_website.jpg')",
       },
       translate: {
         sideBarHidden: "-200px",
       },
-      sreens: {},
+      spacing: {
+        "30rem": "30rem",
+      },
+      screens: {
+        desktop: "1440px",
+      },
     },
   },
   plugins: [],

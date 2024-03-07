@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="overflow-x-hidden bg-eerieblack min-h-screen">
       <Sidenav />
-      <main className="max-w-6xl m-auto">
+      <main className="max-w-7xl m-auto">
         <Main />
         <Projects />
         <About />

@@ -41,7 +41,7 @@ const Sidenav = () => {
     <div id="header">
       <section
         id="leftHeader"
-        className="max-xl:hidden translate-x-[-200px] fixed h-full left-4 flex items-center duration-200"
+        className="max-desktop:hidden translate-x-[-200px] fixed h-full left-4 flex items-center duration-200"
       >
         <nav>
           <ul>

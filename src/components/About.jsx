@@ -39,8 +39,10 @@ const About = () => {
           métier, que ce soit dans la programmation et sa logique, l'utilité et
           l'efficacité d'avoir du code propre, les environnements et
           technologies web qui permettent de faciliter le travail des
-          développeurs. Il y a aussi cette liberté de création que nous laisse
-          le savoir-faire de la programmation qui est très motivante.
+          développeurs. Ce qui me fascine aussi, c'est cette faculté de la
+          programmation qui peut nous laisser une liberté de création et nous
+          donne le pouvoir de contribuer à des projets "open source" par
+          exemple.
         </p>
       </section>
       <h2 className="animate flex flex-col md:flex-row md:gap-4 items-center text-platinum text-4xl font-bold mb-20">
