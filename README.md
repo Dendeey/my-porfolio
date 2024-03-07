@@ -1,8 +1,19 @@
-# React + Vite
+<img src="/src/assets/images/Logo.png" alt="logo">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Mon Portfolio
 
-Currently, two official plugins are available:
+Ce projet est une application web créée pour mon portfolio où vous trouverez les projets que j'ai pu réaliser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Utilisées
+
+- React
+- JavaScript
+- Tailwind
+
+## Développement local
+
+Vite
+
+## Auteurs
+
+- [Votre Nom](lien-vers-votre-profil-github)
