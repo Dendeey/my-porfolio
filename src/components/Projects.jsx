@@ -10,36 +10,22 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiJavascript, SiPhp, SiTailwindcss } from "react-icons/si";
 
 const Projects = () => {
-  // Appeler le hook de React "useEffect" pour déclarer un effet au composant.
-  useEffect(() => {
-    // Stocker dans une variable tous les éléments qui ont une animation.
-    let elements = document.querySelectorAll(".div-animate");
-    // Exécuter une fonction à chaque défilement de la fenêtre.
-    window.onscroll = () => {
-      // Pour chaque élément, ajouter ou enlever la classe "show-animation".
-      elements.forEach((element) => {
-        let posY = window.scrollY;
-        let topPos = element.offsetTop - 600;
-        let elementHeight = element.offsetHeight;
-
-        if (posY >= topPos && posY < topPos + elementHeight) {
-          element.classList.add("show-animation");
-        } else {
-          element.classList.remove("show-animation");
-        }
-      });
-    };
-  }, []);
-
   return (
-    <div className="div-projects div-animate show-animation flex flex-col px-6 mb-40 justify-center items-center w-full min-h-screen">
+    <div
+      id="projets"
+      className="div-projects div-animate show-animation flex flex-col px-6 max-desktop:mb-40 items-center w-full min-h-screen"
+    >
       <h1 className="animate text-platinum text-4xl font-bold mb-20">
         Projets
       </h1>
-      <section className="div-projects div-animate show-animation flex flex-wrap desktop:flex-nowrap justify-center items-center gap-8">
+      <section className="div-projects div-animate show-animation flex flex-wrap justify-center items-center gap-8">
         <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-reactProject bg-cover bg-center rounded-t-md">
-            <a href="#" className="flex justify-end">
+            <a
+              target="_blank"
+              href="https://github.com/Dendeey/my-porfolio"
+              className="flex justify-end"
+            >
               <FaExternalLinkAlt size={20} className="text-white m-4" />
             </a>
           </section>
@@ -70,7 +56,11 @@ const Projects = () => {
         </section>
         <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-wordpressProject bg-cover bg-center rounded-t-md">
-            <a href="#" className="flex justify-end">
+            <a
+              target="_blank"
+              href="https://github.com/Dendeey/us-domagne-saintdidier"
+              className="flex justify-end"
+            >
               <FaExternalLinkAlt size={20} className="text-white m-4" />
             </a>
           </section>
@@ -99,7 +89,11 @@ const Projects = () => {
         </section>
         <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-phpProject bg-cover bg-center rounded-t-md">
-            <a href="#" className="flex justify-end">
+            <a
+              target="_blank"
+              href="https://github.com/Dendeey/res03-projet-final"
+              className="flex justify-end"
+            >
               <FaExternalLinkAlt size={20} className="text-gunmetal m-4" />
             </a>
           </section>

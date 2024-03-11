@@ -13,7 +13,7 @@ const Main = () => {
       // Pour chaque élément, ajouter ou enlever la classe "show-animation".
       elements.forEach((element) => {
         let posY = window.scrollY;
-        let topPos = element.offsetTop - 500;
+        let topPos = element.offsetTop - 400;
         let elementHeight = element.offsetHeight;
 
         if (posY >= topPos && posY < topPos + elementHeight) {
@@ -28,33 +28,35 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="flex flex-col gap-6 px-6 w-full h-screen justify-center items-center"
+      className="flex flex-col gap-6 px-6 w-full h-screen justify-center items-center lg:flex-row-reverse max-tablet:mb-40"
     >
-      <figure className="w-40 h-40">
-        <img src={Logo} alt="Logo" />
+      <figure>
+        <img className="w-52 max-mobile:w-40" src={Logo} alt="Logo" />
       </figure>
-      <div
+      <section
         id="main-animate"
-        className="div-animate show-animation flex flex-col gap-6 relative"
+        className="div-animate show-animation flex flex-col gap-8 relative lg:w-3/5"
       >
         <span className="show-appear-animation"></span>
-        <h1 className="text-platinum text-3xl font-semibold">
-          Salut<span className="pl-1">,</span>
+        <h1 className="text-platinum text-2xl max-mobile:text-xl font-semibold">
+          Hi<span className="pl-1">!</span>
         </h1>
-        <h2 className="text-poppyred text-6xl font-bold">Ici David</h2>
-        <h3 className="text-platinum text-3xl">
+        <h2 className="text-poppyred text-8xl max-mobile:text-6xl font-bold">
+          Ici David
+        </h2>
+        <h3 className="text-platinum text-4xl max-mobile:text-2xl">
           <span className="font-semibold">Développeur Web Junior</span> et
           recheche un contrat d'apprentissage.
         </h3>
         <nav>
           <ul className="flex gap-2">
-            <li className="px-2 py-1 rounded bg-poppyred text-platinum cursor-pointer hover:opacity-60 duration-200">
+            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-200">
               <a href="#" className="flex items-center gap-2">
                 <FaLinkedin size={20} />
                 <span>LinkedIn</span>
               </a>
             </li>
-            <li className="px-2 py-1 rounded bg-poppyred text-platinum cursor-pointer hover:opacity-60 duration-200">
+            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-200">
               <a href="#" className="flex items-center gap-2">
                 <FaGithub size={20} />
                 <span>GitHub</span>
@@ -62,7 +64,7 @@ const Main = () => {
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
     </div>
   );
 };

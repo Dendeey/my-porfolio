@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-div .animate {
-  filter: blur(3px);
-  transition: 1s;
+* {
+  scroll-behavior: smooth;
 }
 
-div.show-animation .animate {
+.animate {
+  filter: blur(3px);
+  transition: 0.6s;
+}
+
+.show-animation .animate {
   filter: blur(0);
   transition: 0.6s;
 }

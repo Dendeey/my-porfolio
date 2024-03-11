@@ -30,7 +30,10 @@ export default {
         "30rem": "30rem",
       },
       screens: {
-        desktop: "1440px",
+        "max-desktop": { max: "1440px" },
+        "max-laptop": { max: "1024px" },
+        "max-tablet": { max: "768px" },
+        "max-mobile": { max: "425px" },
       },
     },
   },

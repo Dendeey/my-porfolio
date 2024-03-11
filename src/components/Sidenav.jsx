@@ -55,7 +55,7 @@ const Sidenav = () => {
             </li>
             <li className="pb-4">
               <a
-                href="#main"
+                href="#projets"
                 className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
               >
                 <BsFillGridFill size={25} />
@@ -63,7 +63,7 @@ const Sidenav = () => {
             </li>
             <li className="pb-4">
               <a
-                href="#main"
+                href="#a-propos"
                 className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
               >
                 <BsPersonFill size={25} />
@@ -71,7 +71,7 @@ const Sidenav = () => {
             </li>
             <li className="pb-4">
               <a
-                href="#main"
+                href="#contact"
                 className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
               >
                 <IoMdMail size={25} />
@@ -84,19 +84,20 @@ const Sidenav = () => {
         <IoMdClose
           size={30}
           onClick={handleNav}
-          className="absolute top-4 right-4 z-[99] md:hidden cursor-pointer text-platinum"
+          className="absolute top-4 right-4 z-[99] lg:hidden cursor-pointer text-platinum"
         />
       ) : (
         <AiOutlineMenu
           size={30}
           onClick={handleNav}
-          className="absolute top-4 right-4 z-[99] md:hidden cursor-pointer text-platinum"
+          className="absolute top-4 right-4 z-[99] lg:hidden cursor-pointer text-platinum"
         />
       )}
 
       {nav ? (
-        <div className="fixed w-full h-screen bg-poppyred/90 flex flex-col justify-center items-center z-20">
+        <section className="fixed w-full h-screen bg-poppyred/90 flex flex-col justify-center items-center z-20">
           <a
+            onClick={handleNav}
             href="#main"
             className="w-[80%] text-platinum font-bold flex justify-center items-center bg-eerieblack rounded shadow-lg shadow-gray-800 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
@@ -104,14 +105,16 @@ const Sidenav = () => {
             <span className="pl-4">Accueil</span>
           </a>
           <a
-            href="#main"
+            onClick={handleNav}
+            href="#projets"
             className="w-[80%] text-platinum font-bold flex justify-center items-center bg-eerieblack rounded shadow-lg shadow-gray-800 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <GrProjects size={20} />
             <span className="pl-4">Projets</span>
           </a>
           <a
-            href="#main"
+            onClick={handleNav}
+            href="#a-propos"
             className="w-[80%] text-platinum font-bold flex justify-center items-center bg-eerieblack rounded shadow-lg shadow-gray-800 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <BsPerson size={20} />
@@ -120,19 +123,20 @@ const Sidenav = () => {
             </span>
           </a>
           <a
-            href="#main"
+            onClick={handleNav}
+            href="#contact"
             className="w-[80%] text-platinum font-bold flex justify-center items-center bg-eerieblack rounded shadow-lg shadow-gray-800 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
           </a>
-        </div>
+        </section>
       ) : (
         <header
           id="topHeader"
-          className="max-md:hidden flex justify-center items-center fixed top-0 right-0 left-0 duration-200"
+          className="max-laptop:hidden flex justify-center items-center fixed top-0 right-0 left-0 duration-200"
         >
-          <div className="flex justify-center items-center px-16 py-4 w-screen max-w-6xl">
+          <section className="flex justify-center items-center px-8 py-4 w-screen max-w-6xl">
             <a href="#main" className="mr-auto">
               <img className="w-12 h-auto" src={Logo} alt="Logo" />
             </a>
@@ -149,7 +153,7 @@ const Sidenav = () => {
                 </li>
                 <li>
                   <a
-                    href="#main"
+                    href="#projets"
                     className="flex font-semibold text-platinum hover:text-poppyred duration-200"
                   >
                     <GrProjects size={20} />
@@ -158,7 +162,7 @@ const Sidenav = () => {
                 </li>
                 <li>
                   <a
-                    href="#main"
+                    href="#a-propos"
                     className="flex font-semibold text-platinum hover:text-poppyred duration-200"
                   >
                     <BsPerson size={20} />
@@ -169,7 +173,7 @@ const Sidenav = () => {
                 </li>
                 <li>
                   <a
-                    href="#main"
+                    href="#contact"
                     className="flex font-semibold text-platinum hover:text-poppyred duration-200"
                   >
                     <AiOutlineMail size={20} />
@@ -178,7 +182,7 @@ const Sidenav = () => {
                 </li>
               </ul>
             </nav>
-          </div>
+          </section>
         </header>
       )}
     </div>
