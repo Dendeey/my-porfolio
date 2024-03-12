@@ -19,11 +19,11 @@ const About = () => {
           construction et effectivement j'aime construire et aboutir un projet.
           Aujourd'hui, ce qui me plaît, c'est d'apprendre et découvrir de ce
           métier, que ce soit dans la programmation et sa logique, l'utilité et
-          l'efficacité d'avoir du code propre, les environnements et
-          technologies web qui permettent de faciliter le travail des
-          développeurs. Avoir cette faculté de la programmation, c'est aussi un
-          moyen de liberté de création et qui nous donne le pouvoir de
-          contribuer à des projets "open source".
+          l'efficacité d'avoir du code propre, les stack et technologies web qui
+          permettent de faciliter le travail des développeurs. Avoir cette
+          faculté de la programmation, c'est aussi un moyen de liberté de
+          création et qui nous donne le pouvoir de contribuer à des projets
+          "open source".
         </p>
       </section>
       <h2 className="animate flex flex-col md:flex-row md:gap-4 items-center text-platinum text-4xl font-bold mb-20">

@@ -10,6 +10,27 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiJavascript, SiPhp, SiTailwindcss } from "react-icons/si";
 
 const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Mon portfolio",
+      description:
+        "J'ai créé mon portfolio pour que vous découvrez mon travail !",
+    },
+    {
+      id: 2,
+      title: "Site web de l'USD",
+      description:
+        "Création d'un thème custom sur WordPress pour mon club de football. Site web de type 'Blog' permettant de suivre les actualités du club.",
+    },
+    {
+      id: 3,
+      title: "Projet final de formation",
+      description:
+        "Création d'un site web pour une association sportive avec un espace administrateur sécurisé pour gérer les contenus.",
+    },
+  ];
+
   return (
     <div
       id="projets"
@@ -26,16 +47,17 @@ const Projects = () => {
               href="https://github.com/Dendeey/my-porfolio"
               className="flex justify-end"
             >
-              <FaExternalLinkAlt size={20} className="text-white m-4" />
+              <FaExternalLinkAlt
+                size={20}
+                className="text-white m-4 hover:text-poppyred duration-200"
+              />
             </a>
           </section>
           <section className="projects_container_content p-4">
             <h2 className="text-platinum text-2xl font-semibold pb-5">
-              Mon portfolio
+              {projects[0].title}
             </h2>
-            <p className="text-platinum text-sm">
-              J'ai créé mon portfolio pour que vous découvrez mon travail !
-            </p>
+            <p className="text-platinum text-sm">{projects[0].description}</p>
           </section>
           <section className="projects_container_stack p-4">
             <ul className="flex flex-wrap justify-center items-center gap-2">
@@ -61,18 +83,17 @@ const Projects = () => {
               href="https://github.com/Dendeey/us-domagne-saintdidier"
               className="flex justify-end"
             >
-              <FaExternalLinkAlt size={20} className="text-white m-4" />
+              <FaExternalLinkAlt
+                size={20}
+                className="text-white m-4 hover:text-poppyred duration-200"
+              />
             </a>
           </section>
           <section className="projects_container_content p-4">
             <h2 className="text-platinum text-2xl font-semibold pb-5">
-              Site web de l'USD
+              {projects[1].title}
             </h2>
-            <p className="text-platinum text-sm">
-              Création d'un thème custom sur WordPress pour mon club de
-              football. Site web de type "Blog" permettant de suivre les
-              actualités du club.
-            </p>
+            <p className="text-platinum text-sm">{projects[1].description}</p>
           </section>
           <section className="projects_container_stack p-4">
             <ul className="flex flex-wrap justify-center items-center gap-2">
@@ -94,17 +115,17 @@ const Projects = () => {
               href="https://github.com/Dendeey/res03-projet-final"
               className="flex justify-end"
             >
-              <FaExternalLinkAlt size={20} className="text-gunmetal m-4" />
+              <FaExternalLinkAlt
+                size={20}
+                className="text-black m-4 hover:text-poppyred duration-200"
+              />
             </a>
           </section>
           <section className="projects_container_content p-4">
             <h2 className="text-platinum text-2xl font-semibold pb-5">
-              Projet final de formation
+              {projects[1].title}
             </h2>
-            <p className="text-platinum text-sm">
-              Création d'un site web pour une association sportive avec un
-              espace administrateur sécurisé pour gérer les contenus.
-            </p>
+            <p className="text-platinum text-sm">{projects[1].description}</p>
           </section>
           <section className="projects_container_stack p-4">
             <ul className="flex flex-wrap justify-center items-center gap-2">

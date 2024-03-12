@@ -31,7 +31,7 @@ export default {
       },
       screens: {
         "max-desktop": { max: "1440px" },
-        "max-laptop": { max: "1024px" },
+        "max-laptop": { max: "1023px" },
         "max-tablet": { max: "768px" },
         "max-mobile": { max: "425px" },
       },

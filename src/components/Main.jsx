@@ -13,7 +13,7 @@ const Main = () => {
       // Pour chaque élément, ajouter ou enlever la classe "show-animation".
       elements.forEach((element) => {
         let posY = window.scrollY;
-        let topPos = element.offsetTop - 400;
+        let topPos = element.offsetTop - 500;
         let elementHeight = element.offsetHeight;
 
         if (posY >= topPos && posY < topPos + elementHeight) {
