@@ -6,7 +6,7 @@ import { SiPhp, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
-    <div id="a-propos" className="flex flex-col px-6 items-center mt-28">
+    <div id="a-propos" className="flex flex-col px-6 items-center mt-40">
       <h1 className=" text-platinum text-4xl font-bold mb-10">
         <span className="uppercase">à</span> propos
       </h1>

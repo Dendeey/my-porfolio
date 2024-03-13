@@ -45,8 +45,8 @@ const Main = () => {
           Ici David
         </h2>
         <h3 className="text-platinum text-4xl max-mobile:text-2xl">
-          <span className="font-semibold">Développeur Web Junior</span> et
-          recheche un contrat d'apprentissage.
+          Je souhaite continuer mon aventure en apprentissage en tant que&nbsp;
+          <span className="font-semibold">Développeur Web</span>.
         </h3>
         <nav>
           <ul className="flex gap-2">
