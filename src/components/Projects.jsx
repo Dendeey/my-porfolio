@@ -34,13 +34,11 @@ const Projects = () => {
   return (
     <div
       id="projets"
-      className="div-projects div-animate show-animation flex flex-col px-6 max-desktop:mb-40 items-center w-full min-h-screen"
+      className="flex flex-col px-6 justify-center items-center w-full"
     >
-      <h1 className="animate text-platinum text-4xl font-bold mb-20">
-        Projets
-      </h1>
-      <section className="div-projects div-animate show-animation flex flex-wrap justify-center items-center gap-8">
-        <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
+      <h1 className="text-platinum text-4xl font-bold mb-10">Projets</h1>
+      <section className="flex flex-wrap justify-center items-center gap-8">
+        <section className="projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-reactProject bg-cover bg-center rounded-t-md">
             <a
               target="_blank"
@@ -49,7 +47,7 @@ const Projects = () => {
             >
               <FaExternalLinkAlt
                 size={20}
-                className="text-white m-4 hover:text-poppyred duration-200"
+                className="text-white m-4 hover:text-poppyred duration-100"
               />
             </a>
           </section>
@@ -76,7 +74,8 @@ const Projects = () => {
             </ul>
           </section>
         </section>
-        <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
+
+        <section className="projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-wordpressProject bg-cover bg-center rounded-t-md">
             <a
               target="_blank"
@@ -85,7 +84,7 @@ const Projects = () => {
             >
               <FaExternalLinkAlt
                 size={20}
-                className="text-white m-4 hover:text-poppyred duration-200"
+                className="text-white m-4 hover:text-poppyred duration-100"
               />
             </a>
           </section>
@@ -108,7 +107,7 @@ const Projects = () => {
             </ul>
           </section>
         </section>
-        <section className="animate projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
+        <section className="projects_container flex flex-col justify-between h-30rem sm:w-96 w-full bg-gunmetal rounded-md shadow-lg shadow-gray-800">
           <section className="projects_container_header h-60 bg-phpProject bg-cover bg-center rounded-t-md">
             <a
               target="_blank"
@@ -117,7 +116,7 @@ const Projects = () => {
             >
               <FaExternalLinkAlt
                 size={20}
-                className="text-black m-4 hover:text-poppyred duration-200"
+                className="text-black m-4 hover:text-poppyred duration-100"
               />
             </a>
           </section>

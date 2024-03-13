@@ -50,14 +50,22 @@ const Main = () => {
         </h3>
         <nav>
           <ul className="flex gap-2">
-            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-200">
-              <a href="#" className="flex items-center gap-2">
+            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-100">
+              <a
+                href="https://www.linkedin.com/in/sim-david/"
+                target="_blank"
+                className="flex items-center gap-2"
+              >
                 <FaLinkedin size={20} />
                 <span>LinkedIn</span>
               </a>
             </li>
-            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-200">
-              <a href="#" className="flex items-center gap-2">
+            <li className="px-2 py-1 rounded bg-poppyred text-sm text-platinum font-medium cursor-pointer hover:opacity-60 duration-100">
+              <a
+                href="https://github.com/Dendeey"
+                target="_blank"
+                className="flex items-center gap-2"
+              >
                 <FaGithub size={20} />
                 <span>GitHub</span>
               </a>

@@ -48,7 +48,7 @@ const Sidenav = () => {
             <li className="pb-4">
               <a
                 href="#main"
-                className=" bg-platinum text-eerieblack w-12 h-12 px-2 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
+                className=" bg-platinum text-eerieblack w-12 h-12 px-2 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-100"
               >
                 <AiFillHome size={25} />
               </a>
@@ -56,7 +56,7 @@ const Sidenav = () => {
             <li className="pb-4">
               <a
                 href="#projets"
-                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
+                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-100"
               >
                 <BsFillGridFill size={25} />
               </a>
@@ -64,7 +64,7 @@ const Sidenav = () => {
             <li className="pb-4">
               <a
                 href="#a-propos"
-                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
+                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-100"
               >
                 <BsPersonFill size={25} />
               </a>
@@ -72,7 +72,7 @@ const Sidenav = () => {
             <li className="pb-4">
               <a
                 href="#contact"
-                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-200"
+                className="bg-platinum text-eerieblack w-12 h-12 rounded-full font-bold flex justify-center items-center hover:scale-105 ease-in duration-100"
               >
                 <IoMdMail size={25} />
               </a>
@@ -145,7 +145,7 @@ const Sidenav = () => {
                 <li>
                   <a
                     href="#main"
-                    className="flex font-semibold text-platinum hover:text-poppyred duration-200"
+                    className="flex font-semibold text-platinum hover:text-poppyred duration-100"
                   >
                     <AiOutlineHome size={20} />
                     <span className="pl-2">Accueil</span>
@@ -154,7 +154,7 @@ const Sidenav = () => {
                 <li>
                   <a
                     href="#projets"
-                    className="flex font-semibold text-platinum hover:text-poppyred duration-200"
+                    className="flex font-semibold text-platinum hover:text-poppyred duration-100"
                   >
                     <GrProjects size={20} />
                     <span className="pl-2">Projets</span>
@@ -163,7 +163,7 @@ const Sidenav = () => {
                 <li>
                   <a
                     href="#a-propos"
-                    className="flex font-semibold text-platinum hover:text-poppyred duration-200"
+                    className="flex font-semibold text-platinum hover:text-poppyred duration-100"
                   >
                     <BsPerson size={20} />
                     <span className="pl-2">
@@ -174,7 +174,7 @@ const Sidenav = () => {
                 <li>
                   <a
                     href="#contact"
-                    className="flex font-semibold text-platinum hover:text-poppyred duration-200"
+                    className="flex font-semibold text-platinum hover:text-poppyred duration-100"
                   >
                     <AiOutlineMail size={20} />
                     <span className="pl-2">Contact</span>

@@ -6,15 +6,12 @@ import { SiPhp, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
-    <div
-      id="a-propos"
-      className="div-about div-animate show-animation flex flex-col px-6 items-center mb-40"
-    >
-      <h1 className="animate text-platinum text-4xl font-bold mb-20">
+    <div id="a-propos" className="flex flex-col px-6 items-center mt-28">
+      <h1 className=" text-platinum text-4xl font-bold mb-10">
         <span className="uppercase">à</span> propos
       </h1>
-      <section className="mb-40">
-        <p className="animate text-eerieblack text-base text-justify font-normal bg-platinum p-4 rounded shadow-lg shadow-gray-800">
+      <section className="mb-20">
+        <p className=" text-eerieblack text-base text-justify font-normal bg-platinum p-4 rounded shadow-lg shadow-gray-800">
           Je me suis intéressé au développement web après mes études dans la
           construction et effectivement j'aime construire et aboutir un projet.
           Aujourd'hui, ce qui me plaît, c'est d'apprendre et découvrir de ce
@@ -22,52 +19,51 @@ const About = () => {
           l'efficacité d'avoir du code propre, les stack et technologies web qui
           permettent de faciliter le travail des développeurs. Avoir cette
           faculté de la programmation, c'est aussi un moyen de liberté de
-          création et qui nous donne le pouvoir de contribuer à des projets
-          "open source".
+          création et de contribution à des projets "open source".
         </p>
       </section>
-      <h2 className="animate flex flex-col md:flex-row md:gap-4 items-center text-platinum text-4xl font-bold mb-20">
+      <h2 className=" flex flex-col md:flex-row md:gap-4 items-center text-platinum text-4xl font-bold mb-10">
         <span>Technologies</span>
         <span>et</span>
         <span>Outils</span>
       </h2>
-      <section className="mb-20">
-        <ul className="animate flex flex-wrap justify-center gap-5">
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+      <section>
+        <ul className=" flex flex-wrap justify-center gap-5">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <IoLogoJavascript size={50} className="text-javascript" />
             <span className="text-base font-normal text-platinum">
               JavaScript
             </span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <SiPhp size={50} className="text-php" />
             <span className="text-base font-normal text-platinum">PHP</span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <GrMysql size={50} className="text-mysql" />
             <span className="text-base font-normal text-platinum">MySQL</span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <FaReact size={50} className="text-react" />
             <span className="text-base font-normal text-platinum">React</span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <FaWordpress size={50} className="text-wordpress" />
             <span className="text-base font-normal text-platinum">
               WordPress
             </span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <FaSass size={50} className="text-sass" />
             <span className="text-base font-normal text-platinum">Sass</span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <SiTailwindcss size={50} className="text-tailwind" />
             <span className="text-base font-normal text-platinum">
               Tailwind
             </span>
           </li>
-          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-200">
+          <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <FaGithub size={50} className="text-github" />
             <span className="text-base font-normal text-platinum">GitHub</span>
           </li>
