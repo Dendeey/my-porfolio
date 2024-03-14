@@ -15,19 +15,19 @@ const Projects = () => {
       id: 1,
       title: "Mon portfolio",
       description:
-        "J'ai créé mon portfolio pour que vous découvrez mon travail !",
+        "Le site sur lequel vous vous trouvez actuellement, réalisé avec Vite + React !",
     },
     {
       id: 2,
       title: "Site web de l'USD",
       description:
-        "Création d'un thème custom sur WordPress pour mon club de football. Site web de type 'Blog' permettant de suivre les actualités du club.",
+        "Thème custom sur WordPress pour mon club de football. Site web de type 'Blog' permettant de suivre les actualités du club.",
     },
     {
       id: 3,
       title: "Projet final de formation",
       description:
-        "Création d'un site web pour une association sportive avec un espace administrateur sécurisé pour gérer les contenus.",
+        "Projet application web et mobile respectant une architecture MVC et le concept de POO avec un espace administrateur sécurisé pour gérer les contenus.",
     },
   ];
 
@@ -122,9 +122,9 @@ const Projects = () => {
           </section>
           <section className="projects_container_content p-4">
             <h2 className="text-platinum text-2xl font-semibold pb-5">
-              {projects[1].title}
+              {projects[2].title}
             </h2>
-            <p className="text-platinum text-sm">{projects[1].description}</p>
+            <p className="text-platinum text-sm">{projects[2].description}</p>
           </section>
           <section className="projects_container_stack p-4">
             <ul className="flex flex-wrap justify-center items-center gap-2">

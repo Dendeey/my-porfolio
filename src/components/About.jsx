@@ -28,6 +28,12 @@ const About = () => {
         <span>Outils</span>
       </h2>
       <section>
+        <p className="mb-5 text-base text-center font-medium text-platinum">
+          Ci-dessous, des languages et outils que j'ai pu utiliser pour réaliser
+          mes projets :
+        </p>
+      </section>
+      <section>
         <ul className=" flex flex-wrap justify-center gap-5">
           <li className="flex justify-center items-center gap-2 p-2 rounded bg-gunmetal shadow-lg shadow-gray-800 w-32 cursor-pointer hover:scale-105 ease-in duration-100">
             <IoLogoJavascript size={50} className="text-javascript" />
